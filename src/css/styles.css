@@ -1,7 +1,21 @@
 body
 {
     background-image: url('../images/background-base.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Outfit', sans-serif;
+}
+
+.heading
+{
+    padding: 60px 0;
+    text-align: center;
+}
+
+.heading h1
+{
+    color: #f1ecff;
+    font-size: 45px; 
+    letter-spacing: 10px;
+    text-transform: uppercase;
 }

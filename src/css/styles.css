@@ -4,6 +4,7 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
 }
 
 .heading
@@ -18,4 +19,20 @@ body
     font-size: 45px; 
     letter-spacing: 10px;
     text-transform: uppercase;
+}
+
+.characters-slider
+{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+}
+
+.characters-list
+{
+    background-color: orange;
+    height: 520px;
+    width: 330px;
 }

@@ -78,3 +78,9 @@ body
 {
     opacity: 1;
 }
+
+.card .character-image
+{
+    width: 100%;
+    max-height: 280px;
+}

@@ -23,7 +23,6 @@ body
 
 .characters-slider
 {
-    background-color: blue;
     display: flex;
     align-items: center;
     gap: 80px;
@@ -47,7 +46,9 @@ body
     align-items: center;
     justify-content: center;
     height: 70px;
+    transition: background-color 0.2s ease-in-out;
     width: 70px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .btn-arrow.btn-back

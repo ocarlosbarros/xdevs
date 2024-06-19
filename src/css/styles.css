@@ -121,3 +121,33 @@ body
     max-height: 130px;
     overflow-y: auto;
 }
+
+.card.background-1
+{
+    background: url('../images/background-1.jpg') no-repeat;
+}
+
+.card.background-2
+{
+    background: url('../images/background-2.jpg') no-repeat;
+}
+
+.card.background-3
+{
+    background: url('../images/background-3.jpg') no-repeat;
+}
+
+.card.background-4
+{
+    background: url('../images/background-4.jpg') no-repeat;
+}
+
+.card.background-5
+{
+    background: url('../images/background-5.jpg') no-repeat;
+}
+
+.card.background-6
+{
+    background: url('../images/background-6.jpg') no-repeat;
+}

@@ -55,3 +55,7 @@ body
     transform: rotateY(180deg);
 }
 
+.btn-arrow:hover
+{
+    background-color: #8351fe;
+}

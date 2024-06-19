@@ -1,7 +1,153 @@
 body
 {
     background-image: url('../images/background-base.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+}
+
+.heading
+{
+    padding: 60px 0;
+    text-align: center;
+}
+
+.heading h1
+{
+    color: #f1ecff;
+    font-size: 45px; 
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.characters-slider
+{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+}
+
+.characters-list
+{
+    background-color: orange;
+    height: 520px;
+    width: 330px;
+    position: relative;
+}
+
+.btn-arrow
+{
+    background-color: #fff;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    transition: background-color 0.2s ease-in-out;
+    width: 70px;
+}
+
+.btn-arrow.btn-back
+{
+    transform: rotateY(180deg);
+}
+
+.btn-arrow:hover
+{
+    background-color: #8351fe;
+}
+
+.card
+{
+    background-color: blue;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 100%;
+    opacity: 0;
+    padding: 12px;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card.selected
+{
+    opacity: 1;
+    z-index: 1;
+}
+
+.card .character-image
+{
+    width: 100%;
+    max-height: 280px;
+}
+
+.card .character-name
+{
+    background-color: rgba(179, 177, 185, 0.7);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color:#fff;
+    font-size: 16px;
+    letter-spacing: 5px;
+    padding:8px 10px;
+    text-transform: uppercase;
+}
+
+.card .character-description 
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .character-description .character-title
+{
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px;
+}
+
+.card .character-description .character-text
+{
+    font-size:14px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 130px;
+    overflow-y: auto;
+}
+
+.card.background-1
+{
+    background: url('../images/background-1.jpg') no-repeat;
+}
+
+.card.background-2
+{
+    background: url('../images/background-2.jpg') no-repeat;
+}
+
+.card.background-3
+{
+    background: url('../images/background-3.jpg') no-repeat;
+}
+
+.card.background-4
+{
+    background: url('../images/background-4.jpg') no-repeat;
+}
+
+.card.background-5
+{
+    background: url('../images/background-5.jpg') no-repeat;
+}
+
+.card.background-6
+{
+    background: url('../images/background-6.jpg') no-repeat;
 }

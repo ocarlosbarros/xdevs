@@ -34,6 +34,7 @@ body
     background-color: orange;
     height: 520px;
     width: 330px;
+    position: relative;
 }
 
 .btn-arrow
@@ -41,6 +42,7 @@ body
     background-color: #fff;
     border: 0;
     border-radius: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -48,7 +50,6 @@ body
     height: 70px;
     transition: background-color 0.2s ease-in-out;
     width: 70px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .btn-arrow.btn-back
@@ -59,4 +60,21 @@ body
 .btn-arrow:hover
 {
     background-color: #8351fe;
+}
+
+.card
+{
+    background-color: blue;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 100%;
+    opacity: 0;
+    padding: 12px;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card.selected
+{
+    opacity: 1;
 }

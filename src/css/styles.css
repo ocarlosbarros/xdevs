@@ -48,5 +48,10 @@ body
     justify-content: center;
     height: 70px;
     width: 70px;
-
 }
+
+.btn-arrow.btn-back
+{
+    transform: rotateY(180deg);
+}
+

@@ -27,11 +27,11 @@ body
     align-items: center;
     gap: 80px;
     justify-content: center;
+    padding: 24px;
 }
 
 .characters-list
 {
-    background-color: orange;
     height: 520px;
     width: 330px;
     position: relative;
@@ -64,14 +64,17 @@ body
 
 .card
 {
-    background-color: blue;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     opacity: 0;
     padding: 12px;
     position: absolute;
     transition: opacity 0.3s ease-in-out;
+
 }
 
 .card.selected
@@ -118,7 +121,7 @@ body
     font-size:14px;
     padding: 12px;
     text-align: justify;
-    max-height: 130px;
+    max-height: 110px;
     overflow-y: auto;
 }
 

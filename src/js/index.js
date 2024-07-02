@@ -19,3 +19,15 @@ btnForward.addEventListener('click', () => {
     cards[currentCard].classList.add('selected');
     
 });
+
+btnBack.addEventListener('click', () => {
+    
+    if (currentCard === INITIAL_POSITION) return;
+
+    const selectedCard = document.querySelector('.selected');
+    selectedCard.classList.remove('selected');
+
+    currentCard -= 1; 
+    cards[currentCard].classList.add('selected');
+    
+});

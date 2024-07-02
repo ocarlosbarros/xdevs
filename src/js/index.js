@@ -1,16 +1,14 @@
 const cards = document.querySelectorAll('.card');
 
-const INITIAL_POSITION = 0;
-const LAST_POSITION = cards.length - 1;
-
 const btnForward = document.getElementById('btn-forward');
 const btnBack = document.getElementById('btn-back');
 
-let currentCard = INITIAL_POSITION;
+let currentCard = 0;
 
 btnForward.addEventListener('click', () => {
+    const isLastCard = currentCard === cards.length - 1;
     
-    if (currentCard === LAST_POSITION) return;
+    if (isLastCard) return;
     
     toggleCard();
     
@@ -20,8 +18,9 @@ btnForward.addEventListener('click', () => {
 });
 
 btnBack.addEventListener('click', () => {
+    const isFirstCard = currentCard === 0;
     
-    if (currentCard === INITIAL_POSITION) return;
+    if (isFirstCard) return;
 
     toggleCard();
 

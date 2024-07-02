@@ -1,7 +1,21 @@
-const btn_forward = document.getElementById('btn-forward');
+const cards = document.querySelectorAll('.card');
 
-let count = 0;
+const INITIAL_POSITION = 0;
+const LAST_POSITION = cards.length - 1;
 
-btn_forward.addEventListener('click', () => {
-    console.log(count++);
+const btnForward = document.getElementById('btn-forward');
+const btnBack = document.getElementById('btn-back');
+
+let currentCard = INITIAL_POSITION;
+
+btnForward.addEventListener('click', () => {
+    
+    if (currentCard === LAST_POSITION) return;
+    
+    const selectedCard = document.querySelector('.selected');
+    selectedCard.classList.remove('selected');
+    
+    currentCard += 1; 
+    cards[currentCard].classList.add('selected');
+    
 });

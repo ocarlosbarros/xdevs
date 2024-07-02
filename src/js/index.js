@@ -12,8 +12,7 @@ btnForward.addEventListener('click', () => {
     
     if (currentCard === LAST_POSITION) return;
     
-    const selectedCard = document.querySelector('.selected');
-    selectedCard.classList.remove('selected');
+    toggleCard();
     
     currentCard += 1; 
     cards[currentCard].classList.add('selected');
@@ -24,10 +23,14 @@ btnBack.addEventListener('click', () => {
     
     if (currentCard === INITIAL_POSITION) return;
 
-    const selectedCard = document.querySelector('.selected');
-    selectedCard.classList.remove('selected');
+    toggleCard();
 
     currentCard -= 1; 
     cards[currentCard].classList.add('selected');
     
 });
+
+function toggleCard() {
+    const selectedCard = document.querySelector('.selected');
+    selectedCard.classList.remove('selected');
+}

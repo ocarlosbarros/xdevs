@@ -15,7 +15,7 @@ btnForward.addEventListener('click', () => {
     toggleCard();
     
     currentCard += 1; 
-    cards[currentCard].classList.add('selected');
+    selectCard();
     
 });
 
@@ -26,9 +26,13 @@ btnBack.addEventListener('click', () => {
     toggleCard();
 
     currentCard -= 1; 
-    cards[currentCard].classList.add('selected');
+    selectCard();
     
 });
+
+function selectCard() {
+    cards[currentCard].classList.add('selected');
+}
 
 function toggleCard() {
     const selectedCard = document.querySelector('.selected');
